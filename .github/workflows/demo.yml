@@ -19,6 +19,5 @@ jobs:
     
     - name: Build and push
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/money-php:latest ./php/
-        docker push ${{ secrets.DOCKER_USERNAME }}/ money-php:latest
-
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/project-assurance:latest .
+        docker push ${{ secrets.DOCKER_USERNAME }}/project-assurance:latest
