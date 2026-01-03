@@ -86,12 +86,6 @@
                     </a>
                 <?php endif; ?>
                 
-                <?php if (isset($_SESSION["role"]) && $_SESSION["role"] != 'client'): ?>
-                    <a href="index.php?action=consulterStatistiques" class="btn btn-light btn-sm mx-2 d-none d-lg-inline">
-                        <i class="bi bi-graph-up"></i> Statistiques
-                    </a>
-                <?php endif; ?>
-                
                 <?php if (isset($_SESSION['login'])): ?>
                     <a href="index.php?action=disconnect" class="btn btn-danger btn-sm">
                         <i class="bi bi-box-arrow-right"></i> <span class="d-none d-lg-inline">Déconnexion</span>
