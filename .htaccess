@@ -1,0 +1,8 @@
+# Enable mod_rewrite and route everything to index.php when target isn't a real file/dir
+RewriteEngine On
+RewriteBase /
+
+# If request is not an existing file or directory, send it to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
