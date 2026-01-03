@@ -79,7 +79,6 @@
                 <span class="text-light ms-2 d-none d-lg-inline"><?= isset($_SESSION['prenom']) ? htmlspecialchars($_SESSION['prenom']) : 'User'; ?></span>
             </div>
             
-            <!-- Utility Buttons -->
             <div class="d-flex">
                 <?php if (isset($_SESSION["role"]) && $_SESSION["role"] == 'client'): ?>
                     <a href="index.php?action=viewPanier" class="btn btn-warning btn-sm mx-2">
